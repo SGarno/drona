@@ -1,6 +1,4 @@
-export default tm1 = {
-
-  viewToJSON: (view) => {
+export function TM1ViewToJSON(view) {
     var rows = [];
     var col_count = view.Axes[0].Cardinality;
     var row_count = view.Axes[1].Cardinality;
@@ -40,5 +38,4 @@ export default tm1 = {
     return rows;
 }
 
-}
 
