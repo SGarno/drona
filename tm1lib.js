@@ -1,4 +1,10 @@
-export function TM1ViewToJSON(view) {
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global = global || self, global.format = factory());
+}(this, function () { 'use strict';
+
+  function TM1ViewToJSON(view) {
     var rows = [];
     var col_count = view.Axes[0].Cardinality;
     var row_count = view.Axes[1].Cardinality;
@@ -36,6 +42,6 @@ export function TM1ViewToJSON(view) {
     });
     rows.push(row);
     return rows;
-}
+  }
 
-
+}));
