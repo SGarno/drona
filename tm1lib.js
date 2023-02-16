@@ -2,7 +2,7 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
-	(global = global || self, global.TM1 = factory());
+	(global = global || self, global.TM1ViewToJSON = factory());
 }(this, function () { 'use strict';
 
   function TM1ViewToJSON(view) {
